@@ -20,7 +20,7 @@ from resources.user import blp as UserBlueprint
 
 def create_app(db_url= None):
     app = Flask(__name__)
-    load_dotenv()
+    # load_dotenv()
     # for registering these created Blueprint with the api
     # Write a configuration options for the API
 
