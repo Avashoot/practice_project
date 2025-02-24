@@ -8,3 +8,5 @@ flask-jwt-extended
 passlib
 redis
 flask-migrate
+gunicorn
+psycopg2

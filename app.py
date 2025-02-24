@@ -9,6 +9,7 @@ from db import db
 from flask_jwt_extended import JWTManager
 from blocklist import BLOCKLIST
 from flask_migrate import Migrate # type: ignore
+from dotenv import load_dotenv
 
 
 from resources.Item import blp as ItemBlueprint
@@ -19,7 +20,7 @@ from resources.user import blp as UserBlueprint
 
 def create_app(db_url= None):
     app = Flask(__name__)
-
+    load_dotenv()
     # for registering these created Blueprint with the api
     # Write a configuration options for the API
 

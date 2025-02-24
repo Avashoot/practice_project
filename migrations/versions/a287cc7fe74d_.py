@@ -42,7 +42,7 @@ def upgrade():
     op.create_table('tags',
     sa.Column('tag_id', sa.Integer(), nullable=False),
     sa.Column('tag_name', sa.String(length=80), nullable=False),
-    sa.Column('store_id', sa.String(), nullable=False),
+    sa.Column('store_id', sa.Integer(), nullable=False),
     sa.ForeignKeyConstraint(['store_id'], ['stores.store_id'], ),
     sa.PrimaryKeyConstraint('tag_id'),
     sa.UniqueConstraint('tag_name')
