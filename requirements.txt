@@ -1,0 +1,10 @@
+flask
+flask-smorest
+python-dotenv
+sqlalchemy
+flask-sqlalchemy
+flask-jwt-extended
+# pass-lib used f=to hash the password that we are going to store in our database
+passlib
+redis
+flask-migrate
